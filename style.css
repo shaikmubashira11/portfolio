@@ -1,0 +1,313 @@
+/* ===== Global ===== */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #0a0a0d;
+  color: #e8e8e8;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  backdrop-filter: blur(12px);
+  background: rgba(20, 20, 25, 0.85) !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+.brand-highlight {
+  color: #b58cff !important;
+}
+
+.navbar-brand {
+  color: #d9c6ff !important;
+  font-weight: 700;
+}
+
+.nav-underline .nav-link {
+  color: #d4d4d4 !important;
+  position: relative;
+}
+
+.nav-underline .nav-link::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(90deg, #8f5fff, #4d2cff);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.nav-underline .nav-link:hover::after {
+  width: 100%;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+  padding: 7rem 0 4rem;
+  background: linear-gradient(180deg, #1a1820 0%, #0a0a0d 70%);
+  position: relative;
+}
+
+.hero-name {
+  font-size: 2.8rem;
+  color: #b58cff;
+  text-shadow: 0 0 12px rgba(181,140,255,0.5);
+}
+
+.text-accent {
+  color: #a278ff;
+  letter-spacing: 0.15em;
+}
+
+.hero-subtitle {
+  color: #bbbbc7;
+}
+
+.hero-intro {
+  color: #dcdcef;
+}
+
+.btn-pill {
+  border-radius: 999px;
+  padding-inline: 1.4rem;
+}
+
+/* Buttons */
+.btn-danger {
+  background: linear-gradient(90deg, #8f5fff, #4d2cff) !important;
+  border: none;
+}
+
+.btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(77,44,255,0.5);
+}
+
+/* Profile Image */
+.profile-img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #8f5fff;
+  transition: 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  border-color: #c9b4ff;
+}
+
+.profile-glow {
+  padding: 6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(143,95,255,0.3), transparent);
+}
+
+/* ===== Section Titles ===== */
+.section-title {
+  font-weight: 600;
+  position: relative;
+  color: #c9b4ff;
+  margin-bottom: 1.5rem;
+}
+
+.section-title::after {
+  content: "";
+  height: 3px;
+  width: 40%;
+  background: linear-gradient(90deg, #8f5fff, #4d2cff);
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  border-radius: 999px;
+}
+
+/* ===== About Tags ===== */
+.tag-pill {
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  background: rgba(143,95,255,0.15);
+  color: #c9b4ff;
+  border: 1px solid rgba(143,95,255,0.4);
+  font-size: 0.8rem;
+}
+
+/* ===== Skills ===== */
+#skills {
+  background: #111016;
+  padding: 3rem 0;
+}
+
+.badge {
+  background: rgba(143,95,255,0.2) !important;
+  color: #c9b4ff !important;
+  border: 1px solid rgba(143,95,255,0.4) !important;
+}
+
+.skill-row {
+  margin-bottom: 1.3rem;
+}
+
+.skill-row .progress {
+  background: rgba(255,255,255,0.1);
+  height: 0.7rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.skill-row .progress-bar {
+  background: linear-gradient(90deg, #8f5fff, #4d2cff);
+}
+
+/* ===== Projects ===== */
+#projects {
+  background: #16141d;
+  padding: 3rem 0;
+}
+
+.project-card {
+  background: #1f1c26;
+  padding: 1.2rem 1.4rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(143,95,255,0.25);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: #b58cff;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.6);
+}
+
+.project-card h5 {
+  color: #b58cff;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Education ===== */
+#education {
+  background: #111016;
+  padding: 3rem 0;
+}
+
+.timeline {
+  border-left: 2px solid rgba(255,255,255,0.1);
+  padding-left: 1rem;
+}
+
+.timeline-item {
+  margin-bottom: 1.4rem;
+  position: relative;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(90deg, #8f5fff, #4d2cff);
+  border-radius: 50%;
+  position: absolute;
+  left: -7px;
+  top: 5px;
+}
+
+.timeline-meta {
+  color: #bbbbbb;
+  font-size: 0.85rem;
+}
+
+/* ===== Certificates ===== */
+#certificates {
+  background: #0d0c11;
+  padding: 3rem 0;
+}
+
+#certificates ul li {
+  margin-bottom: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  background: rgba(143,95,255,0.08);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+#certificates ul li:hover {
+  background: rgba(143,95,255,0.2);
+}
+
+/* ===== Contact ===== */
+#contact {
+  background: #0a0a0d;
+  padding: 3rem 0;
+}
+
+#contact a {
+  color: #b58cff;
+  font-weight: 500;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Social Links ===== */
+.social-links {
+  padding: 2.5rem 0;
+  background: #0a0a0d;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  text-align: center;
+}
+
+.social-btn {
+  border-radius: 999px !important;
+  border-color: rgba(255,255,255,0.4) !important;
+  padding-inline: 1rem;
+  transition: 0.3s;
+}
+
+.social-btn:hover {
+  background: #8f5fff !important;
+  color: #111 !important;
+  box-shadow: 0 8px 20px rgba(143,95,255,0.4);
+  transform: translateY(-2px);
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #0e0c14;
+  color: #c8c0d9;
+  text-align: center;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ===== Animations ===== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-img {
+    margin-top: 1rem;
+  }
+}
